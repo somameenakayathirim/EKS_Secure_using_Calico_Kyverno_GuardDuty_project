@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cryptominer-test
+spec:
+  containers:
+    - name: cryptominer
+      image: alpine
+      command: ["/bin/sh", "-c", "sleep 3600"]

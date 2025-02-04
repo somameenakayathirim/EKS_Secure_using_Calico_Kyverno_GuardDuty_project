@@ -1,0 +1,16 @@
+apiVersion: crd.projectcalico.org/v1
+kind: GlobalNetworkPolicy
+metadata:
+  name: allow-only-payment-to-database
+  namespace: default
+spec:
+  selector: app == "database"
+  order: 100
+  ingress:
+    - action: Allow
+      source:
+        selector: app == "payment"
+  types:
+    - Ingress
+    - Egress
+
