@@ -159,7 +159,7 @@ aws-eks-security/
    ```
    ✅ AWS should block this cryptomining request, but GuardDuty will detect the attempt.
     
-    ![Screenshot](images/GuardDuty-Finding.png)
+    ![Screenshot](images/GuardDuty-Findings.png)
 
    
 
